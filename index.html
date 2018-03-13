@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta charset="UTF-8"/>
+	<title>Presupuesto Medellín</title>
+
+
+
+
+</head>
+  <script type="text/javascript" src="https://cdn.rawgit.com/corlide/presupuesto/1/scripts/jquery.min.js"></script>
+  <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="https://cdn.rawgit.com/corlide/presupuesto/1/scripts/jquery.history.js"></script>
+  <script type="text/javascript" src="https://cdn.rawgit.com/corlide/presupuesto/1/scripts/jquery.tooltip.min.js"></script>
+  <script type="text/javascript" src="https://cdn.rawgit.com/corlide/presupuesto/1/scripts/raphael-min.js"></script>
+  <script type="text/javascript" src="https://cdn.rawgit.com/corlide/presupuesto/1/scripts/Tween.js"></script>
+  <!--script type="text/javascript" src="https://cdn.rawgit.com/corlide/presupuesto/1/scripts/bubbletree.js"></script-->
+  <script type="text/javascript" src="./scripts/bubbletree.js"></script>
+  <!--script type="text/javascript" src="https://cdn.rawgit.com/corlide/presupuesto/1/scripts/aggregator.js"></script-->
+   <script type="text/javascript" src="./scripts/aggregator.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/corlide/presupuesto/1/styles/bubbletree.css" />
+  <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/corlide/presupuesto/1/styles/tooltip.css" />
+  <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/corlide/presupuesto/1/styles/jquery.qtip.min.css" />
+  <!--script type="text/javascript" src="https://cdn.rawgit.com/corlide/presupuesto/1/styles/cofog.js"></script-->
+    <script type="text/javascript" src="./styles/cofog.js"></script>
+  <script type="text/javascript" src="https://cdn.rawgit.com/corlide/presupuesto/1/scripts/jquery.qtip.min.js"></script>
+  <!--script type="text/javascript" src="https://cdn.rawgit.com/corlide/presupuesto/1/scripts/main.js"></script-->
+  <script type="text/javascript" src="./scripts/main.js"></script>
+<body>
+
+<select onchange="displayDate()" id="yearselect">
+  <option value="2017">2017</option>
+  <option value="2016">2016</option>
+ 
+</select>
+<script>
+function displayDate() {
+    onPageLoad(document.getElementById("yearselect").value);
+}
+</script>
+
+
+
+	<div class="bubbletree-wrapper">
+		<div class="bubbletree"></div>
+
+	</div>
+
+
+
+</body>
+
+</html>
